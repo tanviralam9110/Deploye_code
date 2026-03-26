@@ -2,11 +2,11 @@ FROM maven:3.9.6-eclipse-temurin-17-alpine
 
 WORKDIR /app
 
-# Copy entire repo
+# Copy full repo
 COPY . .
 
-# Move into backend folder (IMPORTANT FIX)
-WORKDIR /app/backend
+# Move to correct project folder
+WORKDIR /app/springboot_paractice/demo
 
 # Build project
 RUN mvn clean package -DskipTests
