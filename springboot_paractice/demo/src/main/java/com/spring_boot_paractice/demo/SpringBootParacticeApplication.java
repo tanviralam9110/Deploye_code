@@ -11,9 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 )
 public class SpringBootParacticeApplication {
 
-	public static void main(String[] args) {
-
-		SpringApplication.run(SpringBootParacticeApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootParacticeApplication.class, args);
+    }
 
 }
