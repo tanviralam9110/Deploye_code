@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
     @RestController
-    @CrossOrigin(origins = "*")
+    @CrossOrigin(origins = "https://deploye-code.vercel.app/")
     public class StudentController {
 
         @PostMapping("/submit")
