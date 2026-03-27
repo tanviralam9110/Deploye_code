@@ -2,20 +2,51 @@
 <html>
 <head>
   <title>Healthcare Support</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      display: none;
+    }
+  </style>
 </head>
 <body>
+  <h2>Patient Support Form</h2>
+  <form id="form">
+    <input type="text" id="name" placeholder="Enter Name" required />
+    <textarea id="issue" placeholder="Enter symptoms" rows="4" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="output"></div>
 
-<h2>Patient Support Form</h2>
-
-<form id="form">
-  <input type="text" id="name" placeholder="Enter Name" required><br><br>
-  <textarea id="issue" placeholder="Enter symptoms" required></textarea><br><br>
-  <button type="submit">Submit</button>
-</form>
-
-<h3 id="output"></h3>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
